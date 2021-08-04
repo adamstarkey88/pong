@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 project(pong)
 
 set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED true)
 
 find_package(SDL2 REQUIRED)
 
