@@ -5,7 +5,7 @@ int main() {
 	SDL_Window* window = NULL;
   SDL_Surface* screenSurface = NULL;
 	
-	if (SDL_Init(SDL_INIT_VIDEO) >= 0) {
+	if (SDL_Init(SDL_INIT_VIDEO) < 0) {
 		fprintf(stderr, "[ERROR] Failed to initialise SDL\n%s\n", SDL_GetError());
 	} else {
 		window = SDL_CreateWindow("Pong", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 800, 600, SDL_WINDOW_SHOWN);
